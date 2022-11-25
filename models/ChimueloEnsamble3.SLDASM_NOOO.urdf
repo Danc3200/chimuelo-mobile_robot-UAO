@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ChimueloEnsamble3.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0212317302465533 -0.0154250783675065 -0.150000143866829"
+        rpy="0 0 0" />
+      <mass
+        value="2.56131095772597" />
+      <inertia
+        ixx="0.0251462868736939"
+        ixy="-0.00381319065702184"
+        ixz="1.673619467967E-07"
+        iyy="0.0465364341121388"
+        iyz="3.97157628866357E-08"
+        izz="0.0353607890490498" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.694117647058824 0.0980392156862745 0.0980392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="eje1_Link">
+    <inertial>
+      <origin
+        xyz="-4.71844785465692E-16 0.0250000000000001 2.22044604925031E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0330259927708627" />
+      <inertia
+        ixx="8.61634390561487E-06"
+        ixy="1.72980052303863E-20"
+        ixz="0"
+        iyy="3.47185749003694E-06"
+        iyz="-1.76465197344567E-22"
+        izz="8.61634390561487E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eje1"
+    type="fixed">
+    <origin
+      xyz="-0.28843 -0.0094975 -0.19982"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="eje1_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="llanta1_Link">
+    <inertial>
+      <origin
+        xyz="0 5.55111512312578E-17 0.0249845835881317"
+        rpy="0 0 0" />
+      <mass
+        value="0.832985632781879" />
+      <inertia
+        ixx="0.00243807206581194"
+        ixy="-4.90945112810826E-14"
+        ixz="-1.52207788940479E-16"
+        iyy="0.00243807206505326"
+        iyz="-1.63563290560384E-16"
+        izz="0.0046371118862105" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llanta1"
+    type="continuous">
+    <origin
+      xyz="0 0.05 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="eje1_Link" />
+    <child
+      link="llanta1_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="eje2_Link">
+    <inertial>
+      <origin
+        xyz="1.94289029309402E-16 0.0250000000000001 1.66533453693773E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0330259927708627" />
+      <inertia
+        ixx="8.61634390561487E-06"
+        ixy="1.72980052303863E-20"
+        ixz="-3.69566035259441E-35"
+        iyy="3.47185749003694E-06"
+        iyz="1.12699907518766E-20"
+        izz="8.61634390561487E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eje2"
+    type="fixed">
+    <origin
+      xyz="0.31652 -0.010503 -0.20281"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="eje2_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="llanta2_Link">
+    <inertial>
+      <origin
+        xyz="4.55191440096314E-15 4.77395900588817E-15 0.0249845835881329"
+        rpy="0 0 0" />
+      <mass
+        value="0.832985632781823" />
+      <inertia
+        ixx="0.00243807206580921"
+        ixy="-4.90939754127505E-14"
+        ixz="2.70438927429988E-16"
+        iyy="0.00243807206505054"
+        iyz="2.59426155584728E-16"
+        izz="0.00463711188620505" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llanta2"
+    type="continuous">
+    <origin
+      xyz="0 0.05 0"
+      rpy="1.5708 -0.60262 3.1416" />
+    <parent
+      link="eje2_Link" />
+    <child
+      link="llanta2_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="eje3_Link">
+    <inertial>
+      <origin
+        xyz="-9.43689570931383E-16 -0.025 -2.94209101525666E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0330259927708627" />
+      <inertia
+        ixx="8.61634390561486E-06"
+        ixy="1.72980052303863E-20"
+        ixz="-3.6956603525944E-35"
+        iyy="3.47185749003694E-06"
+        iyz="1.1093525554532E-20"
+        izz="8.61634390561486E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eje3"
+    type="fixed">
+    <origin
+      xyz="-0.28607 0.3105 -0.20281"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="eje3_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="llanta3_Link">
+    <inertial>
+      <origin
+        xyz="2.4980018054066E-16 3.49720252756924E-15 0.0249845835881313"
+        rpy="0 0 0" />
+      <mass
+        value="0.832985632781879" />
+      <inertia
+        ixx="0.00243807206580848"
+        ixy="-4.90913733275367E-14"
+        ixz="-9.10640403269379E-17"
+        iyy="0.00243807206504981"
+        iyz="-1.02176190075383E-16"
+        izz="0.00463711188620359" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llanta3"
+    type="continuous">
+    <origin
+      xyz="0 -0.05 0"
+      rpy="-1.5708 -0.864 -3.1416" />
+    <parent
+      link="eje3_Link" />
+    <child
+      link="llanta3_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="eje4_Link">
+    <inertial>
+      <origin
+        xyz="1.66533453693773E-16 -0.0250000000000001 8.32667268468867E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0330259927708627" />
+      <inertia
+        ixx="8.61634390561487E-06"
+        ixy="1.72980052303863E-20"
+        ixz="-3.79931713745626E-35"
+        iyy="3.47185749003694E-06"
+        iyz="1.1093525554532E-20"
+        izz="8.61634390561487E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/eje4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eje4"
+    type="fixed">
+    <origin
+      xyz="0.31888 0.3095 -0.19982"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="eje4_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="llanta4_Link">
+    <inertial>
+      <origin
+        xyz="-6.7168492989822E-15 -4.38538094726937E-15 0.0249845835881292"
+        rpy="0 0 0" />
+      <mass
+        value="0.832985632781824" />
+      <inertia
+        ixx="0.00243807206580921"
+        ixy="-4.90967943383989E-14"
+        ixz="-5.427194993488E-16"
+        iyy="0.00243807206505053"
+        iyz="-5.53052750650492E-16"
+        izz="0.00463711188620504" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/llanta4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llanta4"
+    type="continuous">
+    <origin
+      xyz="0 -0.05 0"
+      rpy="1.57079632679494 0.916860280207346 0" />
+    <parent
+      link="eje4_Link" />
+    <child
+      link="llanta4_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Lidar_Link">
+    <inertial>
+      <origin
+        xyz="1.8682E-06 -0.0002191 -0.035998"
+        rpy="0 0 0" />
+      <mass
+        value="0.61591" />
+      <inertia
+        ixx="0.00069061"
+        ixy="-2.1251E-10"
+        ixz="-3.8206E-08"
+        iyy="0.00068373"
+        iyz="-1.4702E-06"
+        izz="0.0008392" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/Lidar_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95294 0.99608 0.69412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/Lidar_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lidar"
+    type="fixed">
+    <origin
+      xyz="0.0033286 0.15 0.10853"
+      rpy="-3.1361 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camara1_Link">
+    <inertial>
+      <origin
+        xyz="-0.0325 -0.01262 0.00021774"
+        rpy="0 0 0" />
+      <mass
+        value="0.048201" />
+      <inertia
+        ixx="3.3506E-06"
+        ixy="-4.2592E-07"
+        ixz="7.837E-09"
+        iyy="2.7392E-05"
+        iyz="-2.3854E-09"
+        izz="2.6652E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/camara1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/camara1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camara1"
+    type="fixed">
+    <origin
+      xyz="-0.17912 0.1825 -0.038556"
+      rpy="-3.1349 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="camara1_Link" />
+    <axis
+      xyz="0 0.99991 -0.013435" />
+  </joint>
+  <link
+    name="camara2_Link">
+    <inertial>
+      <origin
+        xyz="0.0325 0.012214 -4.8171E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.048201" />
+      <inertia
+        ixx="3.3506E-06"
+        ixy="4.2599E-07"
+        ixz="-2.1157E-09"
+        iyy="2.7391E-05"
+        iyz="7.5484E-09"
+        izz="2.6652E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/camara2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/camara2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camara2"
+    type="fixed">
+    <origin
+      xyz="0.23323 0.1175 0.10934"
+      rpy="-3.0446 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="camara2_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Micro_Link">
+    <inertial>
+      <origin
+        xyz="-0.058644 0.012929 -0.012547"
+        rpy="0 0 0" />
+      <mass
+        value="0.092029" />
+      <inertia
+        ixx="8.5012E-05"
+        ixy="1.7577E-06"
+        ixz="-2.1166E-07"
+        iyy="7.1259E-05"
+        iyz="-1.1261E-07"
+        izz="0.00015149" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/Micro_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/Micro_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Micro"
+    type="fixed">
+    <origin
+      xyz="0.14474 0.2075 -0.026091"
+      rpy="-1.7171 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Micro_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Pantalla_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/Pantalla_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ChimueloEnsamble3.SLDASM/meshes/Pantalla_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Pantalla"
+    type="fixed">
+    <origin
+      xyz="-0.087931 0.15 0.055257"
+      rpy="2.3106 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Pantalla_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

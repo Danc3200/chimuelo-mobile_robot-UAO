@@ -1,0 +1,44 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"Lidar_Link" [label="Lidar_Link"];
+"Micro_Link" [label="Micro_Link"];
+"Pantalla_Link" [label="Pantalla_Link"];
+"camara1_Link" [label="camara1_Link"];
+"camara2_Link" [label="camara2_Link"];
+"eje1_Link" [label="eje1_Link"];
+"llanta1_Link" [label="llanta1_Link"];
+"eje2_Link" [label="eje2_Link"];
+"llanta2_Link" [label="llanta2_Link"];
+"eje3_Link" [label="eje3_Link"];
+"llanta3_Link" [label="llanta3_Link"];
+"eje4_Link" [label="eje4_Link"];
+"llanta4_Link" [label="llanta4_Link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "Lidar" [label="xyz: 0.0033286 0.15 0.10853 \nrpy: -3.1361 -4.33681e-19 1.5708"]
+"Lidar" -> "Lidar_Link"
+"base_link" -> "Micro" [label="xyz: 0.14474 0.2075 -0.026091 \nrpy: -1.7171 -5.55112e-17 1.5708"]
+"Micro" -> "Micro_Link"
+"base_link" -> "Pantalla" [label="xyz: -0.087931 0.15 0.055257 \nrpy: 2.3106 -0 1.5708"]
+"Pantalla" -> "Pantalla_Link"
+"base_link" -> "camara1" [label="xyz: -0.17912 0.1825 -0.038556 \nrpy: -3.1349 -0 1.5708"]
+"camara1" -> "camara1_Link"
+"base_link" -> "camara2" [label="xyz: 0.23323 0.1175 0.10934 \nrpy: -3.0446 -1.38778e-17 1.5708"]
+"camara2" -> "camara2_Link"
+"base_link" -> "eje1" [label="xyz: -0.28843 -0.0094975 -0.19982 \nrpy: 0 -1.5708 0"]
+"eje1" -> "eje1_Link"
+"eje1_Link" -> "llanta1" [label="xyz: 0 0.05 0 \nrpy: 0 -1.5708 1.5708"]
+"llanta1" -> "llanta1_Link"
+"base_link" -> "eje2" [label="xyz: 0.31652 -0.010503 -0.20281 \nrpy: 0 -1.5708 0"]
+"eje2" -> "eje2_Link"
+"eje2_Link" -> "llanta2" [label="xyz: 0 0.05 0 \nrpy: 1.5708 -0.60262 -3.14159"]
+"llanta2" -> "llanta2_Link"
+"base_link" -> "eje3" [label="xyz: -0.28607 0.3105 -0.20281 \nrpy: 0 -1.5708 0"]
+"eje3" -> "eje3_Link"
+"eje3_Link" -> "llanta3" [label="xyz: 0 -0.05 0 \nrpy: -1.5708 -0.864 3.14159"]
+"llanta3" -> "llanta3_Link"
+"base_link" -> "eje4" [label="xyz: 0.31888 0.3095 -0.19982 \nrpy: 0 -1.5708 0"]
+"eje4" -> "eje4_Link"
+"eje4_Link" -> "llanta4" [label="xyz: 0 -0.05 0 \nrpy: 1.5708 0.91686 0"]
+"llanta4" -> "llanta4_Link"
+}

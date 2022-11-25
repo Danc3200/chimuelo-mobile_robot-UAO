@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot
+  name="Chimuelo">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.028301 -0.00035265 0.085596"
+        rpy="0 0 0" />
+      <mass
+        value="0.98703" />
+      <inertia
+        ixx="0.016765"
+        ixy="-6.4862E-17"
+        ixz="0.0010099"
+        iyy="0.022861"
+        iyz="2.1308E-17"
+        izz="0.029837" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69412 0.098039 0.098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_1">
+    <inertial>
+      <origin
+        xyz="4.2869E-06 2.5666E-05 0.0045618"
+        rpy="0 0 0" />
+      <mass
+        value="2.1424" />
+      <inertia
+        ixx="0.00327"
+        ixy="1.4163E-07"
+        ixz="-8.5794E-07"
+        iyy="0.0032697"
+        iyz="1.2665E-06"
+        izz="0.005768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel1"
+    type="continuous">
+    <origin
+      xyz="0.2686 0.22195 -0.023891"
+      rpy="-1.5708 0.046929 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_2">
+    <inertial>
+      <origin
+        xyz="2.531E-05 -6.0425E-06 0.0045618"
+        rpy="0 0 0" />
+      <mass
+        value="2.1424" />
+      <inertia
+        ixx="0.0032697"
+        ixy="-1.2512E-07"
+        ixz="1.3226E-06"
+        iyy="0.00327"
+        iyz="7.6877E-07"
+        izz="0.005768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel2"
+    type="continuous">
+    <origin
+      xyz="-0.29085 0.22195 0.015552"
+      rpy="-1.5708 0.046929 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_3">
+    <inertial>
+      <origin
+        xyz="-2.5929E-05 2.1842E-06 0.0045618"
+        rpy="0 0 0" />
+      <mass
+        value="2.1424" />
+      <inertia
+        ixx="0.0032698"
+        ixy="-1.5769E-07"
+        ixz="-1.1925E-06"
+        iyy="0.0032699"
+        iyz="-9.5815E-07"
+        izz="0.005768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel3"
+    type="continuous">
+    <origin
+      xyz="0.2686 -0.22265 -0.023891"
+      rpy="1.5708 0.046929 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_4">
+    <inertial>
+      <origin
+        xyz="1.5417E-06 -2.5975E-05 0.0045618"
+        rpy="0 0 0" />
+      <mass
+        value="2.1424" />
+      <inertia
+        ixx="0.0032699"
+        ixy="1.756E-07"
+        ixz="1.1187E-06"
+        iyy="0.0032698"
+        iyz="-1.0434E-06"
+        izz="0.005768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/wheel_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel4"
+    type="continuous">
+    <origin
+      xyz="-0.29085 -0.22265 0.015552"
+      rpy="1.5708 0.046929 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="camera_Link">
+    <inertial>
+      <origin
+        xyz="-0.012742 -3.3103E-05 -5.5092E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.048249" />
+      <inertia
+        ixx="2.738E-05"
+        ixy="-4.2469E-07"
+        ixz="-7.3818E-09"
+        iyy="3.3755E-06"
+        iyz="-1.0909E-08"
+        izz="2.6634E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/camera_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/camera_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_camera"
+    type="fixed">
+    <origin
+      xyz="0.21497 0 0.10979"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="display_Link">
+    <inertial>
+      <origin
+        xyz="0.00059561 -0.0016688 0.0020543"
+        rpy="0 0 0" />
+      <mass
+        value="0.10709" />
+      <inertia
+        ixx="9.4102E-05"
+        ixy="-7.4047E-08"
+        ixz="-7.2277E-09"
+        iyy="0.00026116"
+        iyz="-1.8039E-05"
+        izz="0.00034726" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/display_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/display_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_display"
+    type="fixed">
+    <origin
+      xyz="0.10286 0.00025819 0.16242"
+      rpy="2.21 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="display_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Lidar_Link">
+    <inertial>
+      <origin
+        xyz="0.00061271 0.0036371 -0.035814"
+        rpy="0 0 0" />
+      <mass
+        value="0.61591" />
+      <inertia
+        ixx="0.00069061"
+        ixy="3.8804E-09"
+        ixz="-3.8009E-08"
+        iyy="0.00068583"
+        iyz="-1.7989E-05"
+        izz="0.0008371" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/Lidar_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95294 0.99608 0.69412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/Lidar_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lidar"
+    type="fixed">
+    <origin
+      xyz="0.0086658 0.00025819 0.24254"
+      rpy="3.0465 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="jetson_Link">
+    <inertial>
+      <origin
+        xyz="-0.0580393674464423 0.0129275260649628 -0.012546633298684"
+        rpy="0 0 0" />
+      <mass
+        value="0.0920287361873364" />
+      <inertia
+        ixx="8.50116016168317E-05"
+        ixy="1.75431492706041E-06"
+        ixz="-2.1166411050979E-07"
+        iyy="7.12593040947099E-05"
+        iyz="-1.12587757341168E-07"
+        izz="0.000151485866464735" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/jetson_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/jetson_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_jetson"
+    type="fixed">
+    <origin
+      xyz="-0.069007 -0.064862 0.076651"
+      rpy="-1.7104 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="jetson_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera2_Link">
+    <inertial>
+      <origin
+        xyz="-0.012742 3.3095E-05 5.5094E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.048249" />
+      <inertia
+        ixx="2.738E-05"
+        ixy="4.2468E-07"
+        ixz="7.3823E-09"
+        iyy="3.3755E-06"
+        iyz="-1.0907E-08"
+        izz="2.6634E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/camera2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/camera2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_camera2"
+    type="fixed">
+    <origin
+      xyz="-0.24851 0 0.21807"
+      rpy="0 -0.10375 -3.1416" /> <!--0 0.10375 -3.1416 ORIGINAL SOLID -->
+    <parent
+      link="base_link" />
+    <child
+      link="camera2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="U1_Link">
+    <inertial>
+      <origin
+        xyz="-0.076171 0.10983 0.00064435"
+        rpy="0 0 0" />
+      <mass
+        value="0.3291" />
+      <inertia
+        ixx="0.00056703"
+        ixy="0.00016132"
+        ixz="3.0713E-07"
+        iyy="0.00044712"
+        iyz="1.7948E-07"
+        izz="0.00096642" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/U1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.7059 0.7059 0.7059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/U1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_U1"
+    type="fixed">
+    <origin
+      xyz="-0.13906 -0.17285 0.071737"
+      rpy="1.5708 -1.0393 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="U1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="U2_Link">
+    <inertial>
+      <origin
+        xyz="0.0058423 -0.068038 0.00010531"
+        rpy="0 0 0" />
+      <mass
+        value="0.3291" />
+      <inertia
+        ixx="0.00033702"
+        ixy="-2.6453E-05"
+        ixz="5.263E-10"
+        iyy="0.00067714"
+        iyz="-3.5523E-07"
+        izz="0.00096642" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/U2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.7059 0.7059 0.7059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/U2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_U2"
+    type="fixed">
+    <origin
+      xyz="-2.5116E-05 0.1714 0.12979"
+      rpy="1.5708 0.0012161 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="U2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Techo_Link">
+    <inertial>
+      <origin
+        xyz="0.15998 -0.025098 -0.15"
+        rpy="0 0 0" />
+      <mass
+        value="2.2068" />
+      <inertia
+        ixx="0.012468"
+        ixy="-0.0017161"
+        ixz="-1.9479E-17"
+        iyy="0.01929"
+        iyz="-1.8234E-17"
+        izz="0.011433" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/Techo_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.3" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot2_description/meshes/meshesT/Techo_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_Techo"
+    type="fixed">
+    <origin
+      xyz="0.0086403 0.14965 0.26354"
+      rpy="1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Techo_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+             <!-- *********************** GAZEBO **********************************  -->
+  <gazebo reference="Techo_Link">
+   <visual>
+    <material>
+          <ambient>1 1 1 0.3</ambient>
+          <diffuse>1 1 1 0.3</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>1 1 1 0.3</emissive>
+    </material>
+   </visual>   
+  </gazebo>      
+  <gazebo reference="U1_Link">
+   <visual>
+    <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+    </material>
+   </visual>   
+  </gazebo>  
+  <gazebo reference="base_link">
+   <visual>
+    <material>
+          <ambient>0.69412 0.098039 0.098039 1</ambient>
+          <diffuse>0.69412 0.098039 0.098039 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+    </material>
+   </visual>   
+  </gazebo>     
+  <gazebo reference="wheel_1">
+   <visual>
+    <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+    </material>
+   </visual>   
+  </gazebo> 
+  <gazebo reference="U2_Link">
+   <visual>
+    <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+    </material>
+   </visual>   
+  </gazebo> 
+  
+  <gazebo reference="wheel_2">
+   <visual>
+    <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+    </material>
+   </visual>   
+  </gazebo> 
+  <gazebo reference="wheel_3">
+   <visual>
+    <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+    </material>
+   </visual>   
+  </gazebo> 
+  <gazebo reference="wheel_4">
+   <visual>
+    <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+    </material>
+   </visual>   
+  </gazebo>       
+        
+          <!-- *********************** LIDAR SETUP **********************************  -->
+ 
+  <gazebo reference="Lidar_Link">
+    <sensor name="lidar" type="gpu_ray">
+      <always_on>true</always_on>
+      <visualize>0</visualize>
+      <update_rate>5</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>120</samples>
+            <resolution>1.000000</resolution>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
+          </horizontal>
+          <vertical>
+                <samples>120</samples>
+                <resolution>1</resolution>
+                <min_angle>-${15.0*3.1415926535897931/180.0}</min_angle>
+                <max_angle> ${15.0*3.1415926535897931/180.0}</max_angle>
+              </vertical>
+        </scan>
+        <range>
+          <min>0.3</min>
+          <max>15.0</max>
+          <resolution>0.001</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_velodyne_gpu_laser.so">
+        <ros>
+          <remapping>~/out:=scan</remapping>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>Lidar_Link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="Lidar_Link">
+    <mu1>0.01</mu1>
+    <mu2>0.01</mu2>
+    <material>Gazebo/Black</material>
+  </gazebo>  
+<!-- ********************************  CAMERA1   ************************  -->
+  
+  <gazebo reference="camera_Link">
+    <sensor type="camera" name="camera_sensor">
+      <update_rate>30.0</update_rate>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+
+      <camera name="camera">
+        <horizontal_fov>${69.4*0.01745329251994329577}</horizontal_fov>
+        <image>
+          <width>1920</width>
+          <height>1080</height>
+          <format>RGB_INT8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>100</far>
+        </clip>
+        <distortion>
+          <k1>0.0</k1>
+          <k2>0.0</k2>
+          <k3>0.0</k3>
+          <p1>0.0</p1>
+          <p2>0.0</p2>
+          <center>0.5 0.5</center>
+        </distortion>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <ros>
+          <namespace>/bocbot</namespace>
+         <qos>   <!-- ****  -->
+          <argument>camera/image_raw:=/bocbot/camera/image</argument>
+          <argument>camera/camera_info:=/bocbot/camera/image/camera_info</argument>
+         <!--  <publisher> ****  -->
+        <!--    <reliability>Best Effort</reliability>  ****  -->
+        <!--   </publisher>   ****  -->
+         </qos>  <!-- ****  -->
+        </ros>
+        <camera_name>camera_Link</camera_name> 
+        <frame_name>camera_Link</frame_name>
+        <hack_baseline>0.07</hack_baseline>
+      </plugin>
+    </sensor>
+  </gazebo> 
+<!-- ********************************  CAMERA2   ************************  -->
+  <gazebo reference="camera2_Link">
+    <sensor type="camera" name="camera_sensor">
+      <update_rate>30.0</update_rate>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+
+      <camera name="camera">
+        <horizontal_fov>${69.4*0.01745329251994329577}</horizontal_fov>
+        <image>
+          <width>1920</width>
+          <height>1080</height>
+          <format>RGB_INT8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>100</far>
+        </clip>
+        <distortion>
+          <k1>0.0</k1>
+          <k2>0.0</k2>
+          <k3>0.0</k3>
+          <p1>0.0</p1>
+          <p2>0.0</p2>
+          <center>0.5 0.5</center>
+        </distortion>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <ros>
+          <namespace>/bocbot</namespace>
+          <argument>camera/image_raw:=/bocbot/camera/image</argument>
+          <argument>camera/camera_info:=/bocbot/camera/image/camera_info</argument>
+        </ros>
+        <camera_name>camera2_Link</camera_name>
+        <frame_name>camera2_Link</frame_name>
+        <hack_baseline>0.07</hack_baseline>
+      </plugin>
+    </sensor>
+  </gazebo>  
+  
+ <!-- *********************** WHEEL ODOMETRY ***************************    --> 
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_diff_drive.so">
+
+      <update_rate>100</update_rate>
+      <num_wheel_pairs>2</num_wheel_pairs>
+     
+      <!-- wheels and kinematics-->     
+      <left_joint>base_to_wheel1</left_joint>
+      <left_joint>base_to_wheel2</left_joint>
+      <wheel_separation>0.4446</wheel_separation>
+      <wheel_diameter>0.172</wheel_diameter>
+      
+      <right_joint>base_to_wheel3</right_joint>
+      <right_joint>base_to_wheel4</right_joint>
+      <wheel_separation>0.4446</wheel_separation>
+      <wheel_diameter>0.172</wheel_diameter>
+
+      <!-- limits -->
+      <max_wheel_torque>10</max_wheel_torque>
+      <max_wheel_acceleration>1.0</max_wheel_acceleration>
+
+      <!-- Receive velocity commands on this ROS topic -->
+      <command_topic>cmd_vel</command_topic>
+
+      <!-- output -->
+      <!-- When false, publish no wheel odometry data to a ROS topic -->
+      <publish_odom>true</publish_odom>
+
+      <!-- When true, publish coordinate transform from odom to base_footprint -->
+      <!-- I usually use the robot_localization package to publish this transform -->   
+      <publish_odom_tf>false</publish_odom_tf>
+    
+      <!-- When true, publish coordinate transform from base_link to the wheels -->
+      <!-- The robot_state_publisher package is often used to publish this transform -->   
+      <publish_wheel_tf>true</publish_wheel_tf>
+
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+
+      <odometry_source>1</odometry_source>
+      <ros>
+        <remapping>odom:=wheel/odometry</remapping>
+      </ros>
+    </plugin>
+  </gazebo>
+</robot>

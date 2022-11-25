@@ -1,0 +1,41 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"wheel_1" [label="wheel_1"];
+"wheel_2" [label="wheel_2"];
+"wheel_3" [label="wheel_3"];
+"wheel_4" [label="wheel_4"];
+"Techo_Link" [label="Techo_Link"];
+"U1_Link" [label="U1_Link"];
+"U2_Link" [label="U2_Link"];
+"camera_Link" [label="camera_Link"];
+"camera2_Link" [label="camera2_Link"];
+"display_Link" [label="display_Link"];
+"jetson_Link" [label="jetson_Link"];
+"Lidar_Link" [label="Lidar_Link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "base_to_wheel1" [label="xyz: 0.2686 0.22195 -0.023891 \nrpy: -1.5708 0.046929 6.94654e-18"]
+"base_to_wheel1" -> "wheel_1"
+"base_link" -> "base_to_wheel2" [label="xyz: -0.29085 0.22195 0.015552 \nrpy: -1.5708 0.046929 6.94654e-18"]
+"base_to_wheel2" -> "wheel_2"
+"base_link" -> "base_to_wheel3" [label="xyz: 0.2686 -0.22265 -0.023891 \nrpy: 1.5708 0.046929 -6.94654e-18"]
+"base_to_wheel3" -> "wheel_3"
+"base_link" -> "base_to_wheel4" [label="xyz: -0.29085 -0.22265 0.015552 \nrpy: 1.5708 0.046929 -6.94654e-18"]
+"base_to_wheel4" -> "wheel_4"
+"base_link" -> "joint_Techo" [label="xyz: 0.0086403 0.14965 0.26354 \nrpy: 1.5708 4.23516e-22 3.14159"]
+"joint_Techo" -> "Techo_Link"
+"base_link" -> "joint_U1" [label="xyz: -0.13906 -0.17285 0.071737 \nrpy: 1.5708 -1.0393 -3.14159"]
+"joint_U1" -> "U1_Link"
+"base_link" -> "joint_U2" [label="xyz: -2.5116e-05 0.1714 0.12979 \nrpy: 1.5708 0.0012161 3.14159"]
+"joint_U2" -> "U2_Link"
+"base_link" -> "joint_camera" [label="xyz: 0.21497 0 0.10979 \nrpy: 0 -0 0"]
+"joint_camera" -> "camera_Link"
+"base_link" -> "joint_camera2" [label="xyz: -0.24851 0 0.21807 \nrpy: 0 -0.10375 3.14159"]
+"joint_camera2" -> "camera2_Link"
+"base_link" -> "joint_display" [label="xyz: 0.10286 0.00025819 0.16242 \nrpy: 2.21 -0 -1.5708"]
+"joint_display" -> "display_Link"
+"base_link" -> "joint_jetson" [label="xyz: -0.069007 -0.064862 0.076651 \nrpy: -1.7104 -5.55112e-17 -1.5708"]
+"joint_jetson" -> "jetson_Link"
+"base_link" -> "joint_lidar" [label="xyz: 0.0086658 0.00025819 0.24254 \nrpy: 3.0465 6.93889e-18 -1.5708"]
+"joint_lidar" -> "Lidar_Link"
+}
