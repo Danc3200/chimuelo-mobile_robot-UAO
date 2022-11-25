@@ -5,3 +5,4 @@ of providing a guide service to people with reduced visual and hearing disabilit
 malls, zoos, etc.
 
 
+![Screenshot from 2022-11-25 14-33-20](https://user-images.githubusercontent.com/105894248/204046378-aa911ed6-e090-4ea3-9e6a-77bebe97d229.png)
